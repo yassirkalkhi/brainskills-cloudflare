@@ -6,13 +6,28 @@
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
+		"db:generate": "drizzle-kit generate --name=init",
+		"db:migrate": "drizzle-kit migrate",
 		"test": "vitest",
 		"cf-typegen": "wrangler types"
 	},
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.8.19",
+		"@types/argon2-browser": "^1.18.4",
+		"@types/bcryptjs": "^2.4.6",
+		"@types/node": "^25.0.2",
+		"dotenv": "^17.2.3",
+		"drizzle-kit": "^0.31.8",
+		"tsx": "^4.21.0",
 		"typescript": "^5.5.2",
 		"vitest": "~3.2.0",
 		"wrangler": "^4.54.0"
+	},
+	"dependencies": {
+		"argon2-browser": "^1.18.0",
+		"bcryptjs": "^3.0.3",
+		"drizzle-orm": "^0.45.1",
+		"hono": "^4.11.0",
+		"jose": "^6.1.3"
 	}
 }
